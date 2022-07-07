@@ -1,5 +1,5 @@
 import { Socket } from "socket.io"
-import { saveMessage } from "../utils/messages.js"
+import { saveMessage } from "../utils/messages"
 
 interface OnlineUser {
   username: string

@@ -4,9 +4,9 @@ import { Server } from "socket.io"
 import mongoose from "mongoose"
 import cors from "cors"
 import listEndpoints from "express-list-endpoints"
-import roomsRouter from "./api/rooms/index.js"
+import roomsRouter from "./api/rooms/"
 
-import connectionHandler from "./socket/index.js"
+import connectionHandler from "./socket/"
 
 const server = express()
 const port = process.env.PORT || 3001

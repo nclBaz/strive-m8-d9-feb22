@@ -1,7 +1,7 @@
 import express from "express"
 import createError from "http-errors"
-import RoomsModel from "../../models/rooms.js"
-import MessagesModel from "../../models/messages.js"
+import RoomsModel from "../../models/rooms"
+import MessagesModel from "../../models/messages"
 
 const roomsRouter = express.Router()
 

@@ -1,6 +1,6 @@
 import createHttpError from "http-errors"
-import MessagesModel from "../models/messages.js"
-import RoomsModel from "../models/rooms.js"
+import MessagesModel from "../models/messages"
+import RoomsModel from "../models/rooms"
 
 interface Message {
   text: string
