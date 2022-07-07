@@ -1,8 +1,15 @@
+import { Socket } from "socket.io"
 import { saveMessage } from "../utils/messages.js"
 
-let onlineUsers = []
+interface OnlineUser {
+  username: string
+  room: string
+  socketId: string
+}
 
-const connectionHandler = socket => {
+let onlineUsers: OnlineUser[] = []
+
+const connectionHandler = (socket: Socket) => {
   // We have established a connection with a client
   socket.emit("welcome", { message: `Hello ${socket.id}!` })
 
